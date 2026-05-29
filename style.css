@@ -15,7 +15,7 @@ body {
 header {
   padding: 20px 50px;
   border-bottom: 2px solid orange;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.95);
 }
 
 nav {
@@ -25,12 +25,12 @@ nav {
 }
 
 .brand {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   color: orange;
   text-shadow:
-    0 0 8px orange,
-    0 0 15px red,
-    0 0 25px blue;
+    0 0 10px orange,
+    0 0 20px red,
+    0 0 30px blue;
 }
 
 .nav-links a {
@@ -43,7 +43,7 @@ nav {
 
 .nav-links a:hover {
   color: #00ff88;
-  text-shadow: 0 0 12px #00ff88;
+  text-shadow: 0 0 15px #00ff88;
 }
 
 /* HERO */
@@ -64,15 +64,19 @@ nav {
     transform: scale(1);
     filter: drop-shadow(0 0 20px orange);
   }
+
   25% {
     filter: drop-shadow(0 0 30px blue);
   }
+
   50% {
     filter: drop-shadow(0 0 35px red);
   }
+
   75% {
     filter: drop-shadow(0 0 30px lime);
   }
+
   100% {
     transform: scale(1.04);
     filter: drop-shadow(0 0 40px orange);
@@ -80,16 +84,15 @@ nav {
 }
 
 .hero h2 {
-  font-size: 3.5rem;
   margin-top: 30px;
-  color: white;
+  font-size: 3.5rem;
   text-shadow: 0 0 20px orange;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  color: #ddd;
   margin: 20px 0;
+  font-size: 1.3rem;
+  color: #ccc;
 }
 
 .btn {
@@ -103,15 +106,15 @@ nav {
   box-shadow: 0 0 20px orange;
 }
 
-/* SHOP */
+/* PRODUCTS */
 .products {
   padding: 90px 40px;
   text-align: center;
 }
 
 .products h2 {
-  color: orange;
   font-size: 2.8rem;
+  color: orange;
 }
 
 .product-grid {
@@ -137,21 +140,33 @@ nav {
   box-shadow: 0 0 25px orange;
 }
 
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about h2 {
+  color: blue;
+  margin-bottom: 20px;
+}
+
 /* COMING SOON */
 .coming-soon {
-  padding: 80px 20px;
   text-align: center;
+  padding: 80px 20px;
   background: #050505;
 }
 
 .coming-soon h2 {
   color: lime;
   font-size: 3rem;
+  text-shadow: 0 0 20px lime;
 }
 
 .coming-soon p {
-  color: #ccc;
   margin-top: 20px;
+  color: #ccc;
   font-size: 1.2rem;
 }
 
