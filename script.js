@@ -9,7 +9,13 @@ logo.addEventListener('mouseout', () => {
 });
 
 setInterval(() => {
-  logo.style.filter = Math.random() > 0.5
-    ? 'drop-shadow(0 0 30px orange)'
-    : 'drop-shadow(0 0 15px gold)';
+  const colors = [
+    'drop-shadow(0 0 25px orange)',
+    'drop-shadow(0 0 25px blue)',
+    'drop-shadow(0 0 25px red)',
+    'drop-shadow(0 0 25px lime)'
+  ];
+
+  logo.style.filter =
+    colors[Math.floor(Math.random() * colors.length)];
 }, 500);
