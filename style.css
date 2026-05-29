@@ -1,20 +1,40 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background: #000;
   color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 50px;
+  border-bottom: 1px solid #222;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
+  align-items: center;
+}
+
+.brand {
+  color: orange;
+  font-size: 2rem;
 }
 
 .nav-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: orange;
 }
 
 .hero {
@@ -24,34 +44,81 @@ nav {
 
 .tv-logo {
   width: 320px;
-  animation: flicker 2s infinite alternate;
-  filter: drop-shadow(0 0 20px orange);
+  border-radius: 20px;
+  animation: tvFlicker 2s infinite alternate;
+  filter: drop-shadow(0 0 25px orange);
 }
 
-@keyframes flicker {
-  0% { opacity: 1; transform: scale(1); }
-  50% { opacity: .85; transform: scale(1.02); }
-  100% { opacity: 1; transform: scale(1); }
+@keyframes tvFlicker {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero h2 {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #ccc;
 }
 
 .btn {
+  display: inline-block;
   background: orange;
   color: black;
   padding: 14px 28px;
-  text-decoration: none;
   border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products {
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .product-grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: #111;
-  padding: 40px;
   border: 1px solid orange;
+  padding: 30px;
+  width: 250px;
   border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px orange;
+}
+
+.about {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #222;
+  color: orange;
 }
